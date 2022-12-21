@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		CDBA7CDC29537408003E339F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CDB29537408003E339F /* AppDelegate.swift */; };
 		CDBA7CDE29537408003E339F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CDD29537408003E339F /* SceneDelegate.swift */; };
-		CDBA7CE029537408003E339F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CDF29537408003E339F /* ViewController.swift */; };
 		CDBA7CE329537408003E339F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBA7CE129537408003E339F /* Main.storyboard */; };
 		CDBA7CE529537409003E339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBA7CE429537409003E339F /* Assets.xcassets */; };
 		CDBA7CE829537409003E339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBA7CE629537409003E339F /* LaunchScreen.storyboard */; };
+		CDBA7CF129537635003E339F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CF029537635003E339F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDBA7CD829537408003E339F /* FoodMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDBA7CDB29537408003E339F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDBA7CDD29537408003E339F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CDBA7CDF29537408003E339F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDBA7CE229537408003E339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDBA7CE429537409003E339F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDBA7CE729537409003E339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBA7CE929537409003E339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDBA7CF029537635003E339F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		CDBA7CDA29537408003E339F /* FoodMaster */ = {
 			isa = PBXGroup;
 			children = (
+				CDBA7CEF29537613003E339F /* Controller */,
 				CDBA7CDB29537408003E339F /* AppDelegate.swift */,
 				CDBA7CDD29537408003E339F /* SceneDelegate.swift */,
-				CDBA7CDF29537408003E339F /* ViewController.swift */,
 				CDBA7CE129537408003E339F /* Main.storyboard */,
 				CDBA7CE429537409003E339F /* Assets.xcassets */,
 				CDBA7CE629537409003E339F /* LaunchScreen.storyboard */,
 				CDBA7CE929537409003E339F /* Info.plist */,
 			);
 			path = FoodMaster;
+			sourceTree = "<group>";
+		};
+		CDBA7CEF29537613003E339F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDBA7CF029537635003E339F /* LoginViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDBA7CE029537408003E339F /* ViewController.swift in Sources */,
+				CDBA7CF129537635003E339F /* LoginViewController.swift in Sources */,
 				CDBA7CDC29537408003E339F /* AppDelegate.swift in Sources */,
 				CDBA7CDE29537408003E339F /* SceneDelegate.swift in Sources */,
 			);
