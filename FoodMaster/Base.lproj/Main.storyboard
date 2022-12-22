@@ -127,41 +127,96 @@
         <!--Recipe Search View Controller-->
         <scene sceneID="XCP-cv-xri">
             <objects>
-                <viewController id="QgV-iw-pQ4" customClass="RecipeSearchViewController" customModule="FoodMaster" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VEL-V3-YVu">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W52-Uh-ewF">
-                                <rect key="frame" x="0.0" y="854" width="430" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="kjv-XZ-evQ"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="adf-uZ-m4E"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
+                <viewController id="QgV-iw-pQ4" customClass="RecipeSearchViewController" customModule="FoodMaster" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fx3-xT-qRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-257" y="630"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="ru1-yG-SQc">
             <objects>
-                <viewController id="Jxe-np-Yev" sceneMemberID="viewController">
+                <viewController id="Jxe-np-Yev" customClass="RecipeDetailViewController" customModule="FoodMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YQC-MW-iYH">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAV-jQ-7cw">
+                                <rect key="frame" x="120.66666666666669" y="89" width="189" height="67"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="56"/>
+                                <color key="textColor" systemColor="systemTealColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cousine" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abS-qq-VTA">
+                                <rect key="frame" x="62.666666666666629" y="424.33333333333331" width="305" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="Z7y-ND-I3R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.13311424499999999" blue="0.45433686140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTy-mH-e5B">
+                                <rect key="frame" x="62.666666666666629" y="464.33333333333331" width="305" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="GF0-Cd-9el"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.13311424499999999" blue="0.45433686140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="recipe" translatesAutoresizingMaskIntoConstraints="NO" id="unx-yG-OCh">
+                                <rect key="frame" x="100" y="166" width="230" height="235.33333333333337"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="unx-yG-OCh" secondAttribute="height" multiplier="251:257" id="wkl-YU-ruf"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0qn-NF-Utw">
+                                <rect key="frame" x="57.666666666666629" y="499" width="315" height="286"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="315" id="aw9-Bb-lrM"/>
+                                    <constraint firstAttribute="height" constant="286" id="ox0-Yb-TcX"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-fw-uHS">
+                                <rect key="frame" x="57.666666666666629" y="823" width="315" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="4qV-lX-4vY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="See the Instructions">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemTealColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="eFu-sD-Cf7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="X1E-fw-uHS" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="0RB-H1-puh"/>
+                            <constraint firstItem="eFu-sD-Cf7" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="unx-yG-OCh" secondAttribute="trailing" constant="100" id="CLw-RJ-41U"/>
+                            <constraint firstItem="abS-qq-VTA" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="FeY-uB-baV"/>
+                            <constraint firstItem="abS-qq-VTA" firstAttribute="top" secondItem="unx-yG-OCh" secondAttribute="bottom" constant="23" id="NJf-Um-rOj"/>
+                            <constraint firstItem="0qn-NF-Utw" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="NQX-Y9-9OQ"/>
+                            <constraint firstItem="unx-yG-OCh" firstAttribute="top" secondItem="yAV-jQ-7cw" secondAttribute="bottom" constant="10" id="OP6-wG-pg1"/>
+                            <constraint firstItem="unx-yG-OCh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eFu-sD-Cf7" secondAttribute="leading" constant="100" id="Vp1-w5-F56"/>
+                            <constraint firstItem="X1E-fw-uHS" firstAttribute="top" secondItem="0qn-NF-Utw" secondAttribute="bottom" constant="38" id="Yoh-r6-C32"/>
+                            <constraint firstItem="yAV-jQ-7cw" firstAttribute="top" secondItem="eFu-sD-Cf7" secondAttribute="top" constant="30" id="aV9-hX-leL"/>
+                            <constraint firstItem="GTy-mH-e5B" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="qIA-a5-0vK"/>
+                            <constraint firstItem="unx-yG-OCh" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="rx3-8h-RXF"/>
+                            <constraint firstItem="yAV-jQ-7cw" firstAttribute="centerX" secondItem="eFu-sD-Cf7" secondAttribute="centerX" id="spb-xB-uHH"/>
+                            <constraint firstItem="GTy-mH-e5B" firstAttribute="top" secondItem="abS-qq-VTA" secondAttribute="bottom" constant="20" id="uPG-QL-r7t"/>
+                            <constraint firstItem="0qn-NF-Utw" firstAttribute="top" secondItem="GTy-mH-e5B" secondAttribute="bottom" constant="14.666666666666686" id="viN-pJ-Ow9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psn-3I-Zj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="633"/>
+            <point key="canvasLocation" x="468.83720930232556" y="632.83261802575112"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="w0t-8d-UUE">
@@ -276,11 +331,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="chX-Y6-uwZ"/>
         <segue reference="Gxc-XC-jZ7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="recipe" width="512" height="512"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
