@@ -13,6 +13,9 @@
 		CDBA7CE529537409003E339F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDBA7CE429537409003E339F /* Assets.xcassets */; };
 		CDBA7CE829537409003E339F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDBA7CE629537409003E339F /* LaunchScreen.storyboard */; };
 		CDBA7CF129537635003E339F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CF029537635003E339F /* LoginViewController.swift */; };
+		CDBA7CF329549FF8003E339F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CF229549FF8003E339F /* SignupViewController.swift */; };
+		CDBA7CF52954A008003E339F /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CF42954A008003E339F /* RecipeSearchViewController.swift */; };
+		CDBA7CF72954A127003E339F /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CF62954A127003E339F /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CDBA7CE729537409003E339F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDBA7CE929537409003E339F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDBA7CF029537635003E339F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDBA7CF229549FF8003E339F /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		CDBA7CF42954A008003E339F /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
+		CDBA7CF62954A127003E339F /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				CDBA7CF029537635003E339F /* LoginViewController.swift */,
+				CDBA7CF229549FF8003E339F /* SignupViewController.swift */,
+				CDBA7CF42954A008003E339F /* RecipeSearchViewController.swift */,
+				CDBA7CF62954A127003E339F /* RecipeDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,7 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBA7CF129537635003E339F /* LoginViewController.swift in Sources */,
+				CDBA7CF52954A008003E339F /* RecipeSearchViewController.swift in Sources */,
 				CDBA7CDC29537408003E339F /* AppDelegate.swift in Sources */,
+				CDBA7CF329549FF8003E339F /* SignupViewController.swift in Sources */,
+				CDBA7CF72954A127003E339F /* RecipeDetailViewController.swift in Sources */,
 				CDBA7CDE29537408003E339F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
