@@ -15,8 +15,8 @@ class RecipeDataSource {
     private var defaultFilter : Filter?
     var delegate: DataLoadedDelegate?
     
-    private var recipe: RecipeDetail?
-    private var recipeQueryResults: QueryResult?
+    var recipe: RecipeDetail?
+    var queryResults: [RecipeDetail]?
     
     
     // example: https://api.spoonacular.com/recipes/716429/information?apiKey=YOUR-API-KEY&includeNutrition=true
@@ -24,10 +24,10 @@ class RecipeDataSource {
     }
     
     
-    func queryRecipeByFilter(query: String, filter: Filter? = nil) {
-        
+    func queryRecipeByFilter(query: String, filter: Filter? = nil, appendFlag: Bool = false, numberOfResults: Int = 20) {
+        var recipeQueryResults: QueryResult?
         let session = URLSession.shared
-        if let url = URL(string: "\(baseURL)/recipes/complexSearch/information?apiKey=\(apiKey)\(filter?.getFilterAsURLParameters() ?? "")") {
+        if let url = URL(string: "\(baseURL)/recipes/complexSearch/information?apiKey=\(apiKey)&number=\(numberOfResults)\(filter?.getFilterAsURLParameters() ?? "")") {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -36,7 +36,15 @@ class RecipeDataSource {
                 if let data = data {
                     // print(String(decoding: data, as: UTF8.self))
                     let decoder = JSONDecoder()
-                    self.recipeQueryResults = try! decoder.decode(QueryResult.self, from: data)
+                    recipeQueryResults = try! decoder.decode(QueryResult.self, from: data)
+                    
+                    if appendFlag {
+                        self.queryResults?.append(contentsOf: (recipeQueryResults?.results ?? []))
+                    }
+                    else {
+                        self.queryResults = recipeQueryResults?.results
+                    }
+                    
                     DispatchQueue.main.async {
                         self.delegate?.dataLoaded()
                     }

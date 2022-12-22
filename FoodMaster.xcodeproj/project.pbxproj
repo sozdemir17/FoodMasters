@@ -24,6 +24,7 @@
 		CE5B76DC2954B74B00B58EA7 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */; };
 		CE5B76DE2954BAF600B58EA7 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */; };
 		CE5B76E02954BDC700B58EA7 /* DataLoadedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */; };
+		CE5B76E42954D85F00B58EA7 /* RandomRecipeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76E32954D85F00B58EA7 /* RandomRecipeDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
 		CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadedDelegate.swift; sourceTree = "<group>"; };
+		CE5B76E32954D85F00B58EA7 /* RandomRecipeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipeDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */,
 				CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */,
 				CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */,
+				CE5B76E32954D85F00B58EA7 /* RandomRecipeDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				CDBA7CDE29537408003E339F /* SceneDelegate.swift in Sources */,
 				CE5B76DA2954B5A800B58EA7 /* RecipeQueryResult.swift in Sources */,
 				CE5B76E02954BDC700B58EA7 /* DataLoadedDelegate.swift in Sources */,
+				CE5B76E42954D85F00B58EA7 /* RandomRecipeDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
