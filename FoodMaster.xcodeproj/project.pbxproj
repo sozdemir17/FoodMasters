@@ -19,6 +19,14 @@
 		CDBA7CFB2954CCED003E339F /* MyRecipeBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CFA2954CCED003E339F /* MyRecipeBookViewController.swift */; };
 		CDBA7CFD2954CCF8003E339F /* RandomRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CFC2954CCF8003E339F /* RandomRecipeViewController.swift */; };
 		CDBA7CFF2954CD06003E339F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBA7CFE2954CD06003E339F /* ProfileViewController.swift */; };
+		CE5B76CF2954AA2300B58EA7 /* RecipeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76CE2954AA2300B58EA7 /* RecipeDataSource.swift */; };
+		CE5B76D12954ADB000B58EA7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76D02954ADB000B58EA7 /* Profile.swift */; };
+		CE5B76D52954B07000B58EA7 /* AdvancedFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76D42954B07000B58EA7 /* AdvancedFilter.swift */; };
+		CE5B76D72954B0C200B58EA7 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76D62954B0C200B58EA7 /* Filter.swift */; };
+		CE5B76DA2954B5A800B58EA7 /* RecipeQueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76D92954B5A800B58EA7 /* RecipeQueryResult.swift */; };
+		CE5B76DC2954B74B00B58EA7 /* RecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */; };
+		CE5B76DE2954BAF600B58EA7 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */; };
+		CE5B76E02954BDC700B58EA7 /* DataLoadedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +44,14 @@
 		CDBA7CFA2954CCED003E339F /* MyRecipeBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecipeBookViewController.swift; sourceTree = "<group>"; };
 		CDBA7CFC2954CCF8003E339F /* RandomRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomRecipeViewController.swift; sourceTree = "<group>"; };
 		CDBA7CFE2954CD06003E339F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE5B76CE2954AA2300B58EA7 /* RecipeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDataSource.swift; sourceTree = "<group>"; };
+		CE5B76D02954ADB000B58EA7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CE5B76D42954B07000B58EA7 /* AdvancedFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedFilter.swift; sourceTree = "<group>"; };
+		CE5B76D62954B0C200B58EA7 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		CE5B76D92954B5A800B58EA7 /* RecipeQueryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeQueryResult.swift; sourceTree = "<group>"; };
+		CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetail.swift; sourceTree = "<group>"; };
+		CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadedDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 		CDBA7CDA29537408003E339F /* FoodMaster */ = {
 			isa = PBXGroup;
 			children = (
+				CE5B76CD2954AA0000B58EA7 /* Model */,
 				CDBA7CEF29537613003E339F /* Controller */,
 				CDBA7CDB29537408003E339F /* AppDelegate.swift */,
 				CDBA7CDD29537408003E339F /* SceneDelegate.swift */,
@@ -99,6 +116,19 @@
 				CDBA7CFE2954CD06003E339F /* ProfileViewController.swift */,
 			);
 			path = NavigationBarControllers;
+		CE5B76CD2954AA0000B58EA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE5B76CE2954AA2300B58EA7 /* RecipeDataSource.swift */,
+				CE5B76D02954ADB000B58EA7 /* Profile.swift */,
+				CE5B76D62954B0C200B58EA7 /* Filter.swift */,
+				CE5B76D42954B07000B58EA7 /* AdvancedFilter.swift */,
+				CE5B76D92954B5A800B58EA7 /* RecipeQueryResult.swift */,
+				CE5B76DB2954B74B00B58EA7 /* RecipeDetail.swift */,
+				CE5B76DD2954BAF600B58EA7 /* Ingredient.swift */,
+				CE5B76DF2954BDC700B58EA7 /* DataLoadedDelegate.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,13 +204,21 @@
 			files = (
 				CDBA7CFB2954CCED003E339F /* MyRecipeBookViewController.swift in Sources */,
 				CDBA7CF129537635003E339F /* LoginViewController.swift in Sources */,
+				CE5B76DE2954BAF600B58EA7 /* Ingredient.swift in Sources */,
+				CE5B76D12954ADB000B58EA7 /* Profile.swift in Sources */,
+				CE5B76D72954B0C200B58EA7 /* Filter.swift in Sources */,
 				CDBA7CF52954A008003E339F /* RecipeSearchViewController.swift in Sources */,
+				CE5B76DC2954B74B00B58EA7 /* RecipeDetail.swift in Sources */,
+				CE5B76D52954B07000B58EA7 /* AdvancedFilter.swift in Sources */,
 				CDBA7CDC29537408003E339F /* AppDelegate.swift in Sources */,
 				CDBA7CF329549FF8003E339F /* SignupViewController.swift in Sources */,
 				CDBA7CF72954A127003E339F /* RecipeDetailViewController.swift in Sources */,
 				CDBA7CFF2954CD06003E339F /* ProfileViewController.swift in Sources */,
 				CDBA7CFD2954CCF8003E339F /* RandomRecipeViewController.swift in Sources */,
+				CE5B76CF2954AA2300B58EA7 /* RecipeDataSource.swift in Sources */,
 				CDBA7CDE29537408003E339F /* SceneDelegate.swift in Sources */,
+				CE5B76DA2954B5A800B58EA7 /* RecipeQueryResult.swift in Sources */,
+				CE5B76E02954BDC700B58EA7 /* DataLoadedDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
